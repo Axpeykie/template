@@ -10,7 +10,7 @@ export default defineConfig({
       '@': resolve(__dirname, 'src')
     }
   },
-  base: './',
+  base: '/template/',
   server: {
     port: 5000,
     open: true, // 服务启动时是否自动打开浏览器
