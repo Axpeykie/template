@@ -1,6 +1,6 @@
 <template>
   <div class="home">home</div>
-  <div>{{count}}</div>
+  <div>{{ count }}</div>
   <button @click="click">click</button>
 </template>
 <script lang="ts">
@@ -16,12 +16,12 @@ export default defineComponent({
       await store.dispatch('increment')
       count.value = store.getters.double
       console.log(import.meta.env.MODE)
-      console.log(import.meta.env.BASE_URL)
-      console.log(import.meta.env.PROD)
-      console.log(import.meta.env.DEV)
+      // console.log(import.meta.env.BASE_URL)
+      // console.log(import.meta.env.PROD)
+      // console.log(import.meta.env.DEV)
     }
     return { count, click }
-  },
+  }
 })
 </script>
 <style lang="less">
