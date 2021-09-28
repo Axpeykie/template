@@ -20,7 +20,8 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'no-param-reassign': 'off',
     'class-methods-use-this': 'off',
-    'no-console': 'off'
+    'no-console': 'off',
+    'import/prefer-default-export': 'off'
   }
 }
 
@@ -49,8 +50,8 @@ module.exports = {
 //     'eol-last': 'off',
 //     'generator-star-spacing': 'off',
 //     'no-unused-vars': 'off',
-//     // 'import/no-unresolved': 'off',
-//     // 'import/extensions': 'off',
+// 'import/no-unresolved': 'off',
+// 'import/extensions': 'off',
 //     'import/no-absolute-path': 'off',
 //     'import/no-extraneous-dependencies': 'off',
 //     'vue/no-multiple-template-root': 'off',
