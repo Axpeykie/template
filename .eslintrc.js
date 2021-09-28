@@ -27,7 +27,8 @@ module.exports = {
     'no-param-reassign': 'off',
     'class-methods-use-this': 'off',
     'no-console': 'off',
-    'import/prefer-default-export': 'off'
+    'import/prefer-default-export': 'off',
+    'no-continue': 'off'
   }
 }
 

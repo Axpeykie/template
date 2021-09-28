@@ -16,7 +16,8 @@
       "@/*": ["src/*"]
     },
     ////////
-    "types": ["vite/client", "jest", "node"]
+    "types": ["vite/client", "jest", "node"],
+    "suppressImplicitAnyIndexErrors": true
   },
   "include": [
     "src/**/*.ts",
