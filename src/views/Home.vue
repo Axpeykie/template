@@ -15,7 +15,7 @@ export default defineComponent({
       // store.commit('increment')
       await store.dispatch('increment')
       count.value = store.getters.double
-      console.log(import.meta.env.MODE)
+      // console.log(import.meta.env.MODE)
       // console.log(import.meta.env.BASE_URL)
       // console.log(import.meta.env.PROD)
       // console.log(import.meta.env.DEV)
