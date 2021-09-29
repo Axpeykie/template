@@ -5,7 +5,7 @@
     "dev": "vite --host --mode development",
     "test:build": "vue-tsc --noEmit && vite build --mode test",
     "build": "vue-tsc --noEmit && vite build --mode production",
-    "serve": "vite preview",
+    "serve": "vite preview --host",
     "prepare": "husky install",
     "test": "jest"
   },
@@ -22,6 +22,7 @@
     "@typescript-eslint/parser": "^4.32.0",
     "@vitejs/plugin-vue": "^1.9.0",
     "@vue/test-utils": "^2.0.0-rc.15",
+    "autoprefixer": "^10.3.6",
     "commitizen": "^4.2.4",
     "cz-customizable": "^6.3.0",
     "eslint": "^7.32.0",
@@ -44,7 +45,10 @@
     "vue-tsc": "^0.3.0"
   },
   "lint-staged": {
-    "*.{vue,js,ts}": "eslint --fix"
+    "src/**/*.{vue,js,ts}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   },
   "config": {
     "commitizen": {

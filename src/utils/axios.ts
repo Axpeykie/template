@@ -1,25 +1,9 @@
 import Axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse, AxiosPromise } from 'axios'
-import { baseURL } from '@/config'
 
-let apiBaseURL
-
-switch (process.env.NODE_ENV) {
-  case 'development':
-    apiBaseURL = baseURL.devBaseURL
-    break
-  case 'test':
-    apiBaseURL = baseURL.testBaseURL
-    break
-  case 'production':
-    apiBaseURL = baseURL.prodBaseURL
-    break
-  default:
-    apiBaseURL = baseURL.devBaseURL
-    break
-}
+const baseURL: string = import.meta.env.VITE_BASE_API as string
 
 const defaultOptions = {
-  baseURL: apiBaseURL,
+  baseURL,
   timeout: 20000
 }
 

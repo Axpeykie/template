@@ -1,20 +1,12 @@
-import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
-import Home from '@/views/Home.vue'
+import { createRouter, createWebHashHistory, RouteRecordRaw, Router } from 'vue-router'
+// 静态路由
+import { staticRoutes } from './static'
+// 动态路由
+import { dynamicRoutes } from './dynamic'
+// 合并路由
+const routes: RouteRecordRaw[] = [...staticRoutes, ...dynamicRoutes]
 
-const routes: RouteRecordRaw[] = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/login',
-    name: 'Login',
-    component: () => import('@/views/login/index.vue')
-  }
-]
-
-const router = createRouter({
+const router: Router = createRouter({
   history: createWebHashHistory(),
   routes
 })
