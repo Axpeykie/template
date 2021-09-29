@@ -24,10 +24,10 @@ module.exports = {
     'import/extensions': 'off',
     'vue/no-multiple-template-root': 'off', // 允许vue3template下有多个根节点
     'import/no-extraneous-dependencies': 'off',
-    'no-param-reassign': 'off',
-    'class-methods-use-this': 'off',
-    'no-console': 'off',
-    'import/prefer-default-export': 'off',
-    'no-continue': 'off'
+    'no-param-reassign': 'off', // 允许修改对象属性
+    'class-methods-use-this': 'off', // 类方法不强制使用this
+    'no-console': 'off', // 允许console
+    'import/prefer-default-export': 'off', // 文件只有单个导出时不必需要默认导出
+    'no-continue': 'off' // 允许在循环体中使用continue
   }
 }
