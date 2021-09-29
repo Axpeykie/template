@@ -1,4 +1,4 @@
-interface userStateType {
+export interface userStateType {
   name: string
   age: number
 }

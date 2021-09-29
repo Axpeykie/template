@@ -1,4 +1,4 @@
-interface langStateType {
+export interface langStateType {
   code: string
   language: string
 }

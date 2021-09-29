@@ -1,8 +1,13 @@
-import { createStore } from 'vuex'
-import { lang } from './modules/lang'
-import { user } from './modules/user'
+import { createStore, Store } from 'vuex'
+import { lang, langStateType } from './modules/lang'
+import { user, userStateType } from './modules/user'
 
-export default createStore({
+interface stateType {
+  lang: langStateType
+  user: userStateType
+}
+
+export const store: Store<stateType> = createStore({
   mutations: {},
   actions: {},
   getters: {},
@@ -11,3 +16,4 @@ export default createStore({
     user
   }
 })
+export default store

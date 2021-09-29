@@ -1,5 +1,6 @@
 <template>
   <div class="home">home</div>
+  <a-button type="primary">button</a-button>
 </template>
 <script lang="ts">
 import { defineComponent } from '@vue/runtime-core'
