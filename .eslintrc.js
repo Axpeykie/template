@@ -24,9 +24,10 @@ module.exports = {
     'import/extensions': 'off',
     'vue/no-multiple-template-root': 'off', // 允许vue3template下有多个根节点
     'import/no-extraneous-dependencies': 'off',
-    'no-param-reassign': 'off', // 允许修改对象属性
-    'class-methods-use-this': 'off', // 类方法不强制使用this
-    'no-console': 'off', // 允许console
-    'import/prefer-default-export': 'off' // 文件只有一个导出时不必一定有默认导出
+    'no-param-reassign': 'off',
+    'class-methods-use-this': 'off',
+    'no-console': 'off',
+    'import/prefer-default-export': 'off',
+    'no-continue': 'off'
   }
 }
